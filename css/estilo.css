@@ -6,31 +6,30 @@ body {
 	cursor: url(../imagenes/Alpha.cur), auto;
 }
 
+h1, h2, p, a, span{
+	color: #FFFFFF;
+}
+
 .base {
-	background-color: #ffffff;
+	background-image: linear-gradient(#121212, #606060);
 	width: 95%;
 	margin: auto;
 	margin-top: 3%;
 }
 
 .cabezera {
-	background-color: #b3ffff;
+	background-color: #373737;
 }
 
-.logo {
-	width: 70px;
-	height: 70px;
-	margin: 5px;
-	margin-left: 15px;
-
-}/*menu*/
+/*menu*/
 a {
-    color: #222;
     text-decoration: none;
 }
+
 ul, ol, li {
     list-style: outside none none;
 }
+
 header, #central-content {
     box-sizing: border-box;
     margin: 0 auto;
@@ -38,40 +37,46 @@ header, #central-content {
     width: 100%;
 
 }
+
 header {
     background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(59, 89, 151, 1) 0%, rgba(41, 62, 107, 1) 100%) repeat scroll 0 0;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
     padding: 0.8em 0 0;
 }
 
-header h1#logo img {
-    height: 40px;
+.control-menu img {
+    height: 10px;
+    width: 10px;
     margin-left: 0.5em;
 }
+
 .control-menu {
     background-color: transparent;
     background-position: center center;
     border: 1px solid #fff;
     display: block;
-    float: right;
+    float: left;
     height: 40px;
-    margin-right: 1.3em;
+    margin-left: 1.3em;
     width: 40px;
 }
+
 .control-menu a span {
     display: inline-block;
     height: 40px;
     text-indent: -9999px;
     width: 40px;
 }
+
 .control-menu .close {
-    background-image: url("../imgenes/logo.png");
+    background-image: url("../imagenes/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     display: none;
 }
+
 .control-menu .open {
-    background-image: url("../imgenes/logo.png");
+    background-image: url("../imagenes/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
@@ -85,11 +90,9 @@ ul.nav-items {
 }
 
 #navigation:target ul.nav-items {
-    background: #f0f0f0 none repeat scroll 0 0;
-    height: 15.8em;
+    height: 5.7em;
     transition: height 0.4s ease-in-out 0s, background-color 0.9s ease 0s; /*El menú cambia su altura y su color de fondo mediante una transición suavizada al abrirse*/
 }
-
 
 /*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
 
@@ -112,35 +115,31 @@ ul.nav-items {
 ul.nav-items li {
     display: block;
 }
+
 ul.nav-items a {
-    border-top: 2px dotted #dddbdb;
-    color: #333;
     display: block;
     height: 3em;
     line-height: 3em;
     margin: 0 1.3em;
 }
+
 ul.nav-items li:first-child a {
     border-top: 2px solid transparent;
 }
+
 ul.nav-items li a span {
+	background-color: #121212;
     border-left: 3px solid;
     height: 3.2em;
     padding: 0.4em 0.5em;
 }
-#Web-Dev a span {
+
+#Trabajos a span {
     border-color: #ff6633;
 }
-#Mobile a span {
-    border-color: #bda94d;
-}
-#Data a span {
-    border-color: #5887bc;
-}
-#Net-VS a span {
+
+#Redes a span {
     border-color: #00a2b7;
 }
-#SharePoint a span {
-    border-color: #639bf2;
-}
+
 /*final menu*/
